@@ -1,34 +1,22 @@
-// const button = document.getElementById('button-save');
-
-// const users = document.getElementById('usuario').value;
-// const b = document.getElementById('password').value;
-
-
-//  button.addEventListener('click', () =>{
-//     Event.preventDefault
-//  localStorage.setItem('saveduser', JSON.stringify(users))
-// (JSON.parse(localStorage.getItem('saveduser')))
-//  })
-
-function saveData() {
-    let user , password , email 
-     user = document.getElementById('usuario').value;
-     password = document.getElementById('password').value;
-     email = document.getElementById('email').value;
+function saveData() { 
+   const  user = document.getElementById('usuario').value;
+   const password = document.getElementById('password').value;
 
 
 let usersrecords = Array();
 usersrecords = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
-if(usersrecords.some((a)=>{return a.email==email}))
+if(usersrecords.some((a)=>{return a.user===user && a.password===password}))
 {
-  alert("duplicate data");
+  alert("Usted ya está logeado");
+}
+else if(user===password) {
+alert("Por favor ingrese un usuario y una contraseña valida")
 }
 else
 {
   usersrecords.push({
   "user":user,
   "password":password,
-  "email": email
 })
 localStorage.setItem("users",JSON.stringify(usersrecords));
 }

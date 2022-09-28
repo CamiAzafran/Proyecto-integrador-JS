@@ -127,19 +127,3 @@ body {
     padding: 0 20px;
     box-shadow: 0 30px 80px #adadad
   }
-  
-  .registro-link {
-    font-family: 'Cutive Mono', monospace;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    margin-top: 20px;
-    padding: 0 20px;
-    cursor: pointer;
-    color: #adadad;
-    text-decoration: none;
-  }
-  
-  .registro-link:hover {
-    color: #525252;
-  }

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/productos.css">
+    <title>Malvina</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a class="active" href="login.html">Login</a>
+                <a href="productos.html">productos</a>
+                <a href="index.html">Home</a>
+                <div>
+                    <h2>Malvina</h2>
+                </div>
+            </div>
+        </nav>
+        <div class="linea-div"></div>
+    </header>
+    <main>
+        <div id="filterContainer">
+            <button class="btn active" onclick="filterSelection('all')">Todas</button>
+            <button class="btn-filtro" onclick="filterSelection('negro')"> Negro</button>
+            <button class="btn-filtro" onclick="filterSelection('otras')"> Otras</button>
+        </div>
+
+        <div class="row">
+            <div class="column negro">
+              <div class="content">
+                <img src="/IMG/IMG-1.jpeg" alt="remera negra 1" style="width:100%">
+                <p>$1.500</p>
+              </div>
+            </div>
+            <div class="column negro">
+              <div class="content">
+                <img src="/IMG/IMG-3.jpeg" alt="remera negra 2" style="width:100%">
+                <p>$1.500</p>
+              </div>
+            </div>
+            <div class="column otras">
+              <div class="content">
+                <img src="/IMG/IMG-2.jpeg" alt="remera blanca" style="width:100%">
+                <p>$1.500</p>
+              </div>
+            </div>
+          
+            <div class="column otras">
+              <div class="content">
+                <img src="/IMG/IMG-4.jpeg" alt="remera rosa" style="width:100%">
+                <p>$1.500</p>
+              </div>
+            </div>
+        </div>
+    </main>
+    </body>
