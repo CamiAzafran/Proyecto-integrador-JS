@@ -1,164 +1,170 @@
 body {
-  font-family: 'Cutive Mono', monospace;
-  color: #252525;
-  background-color: #f5f5f5;
-  margin: 0;
+    font-family: 'Cutive Mono', monospace;
+    color: #252525;
+    background-color: #f5f5f5;
+    margin: 0;
+    margin-right: 2rem;
 }
 
 .navbar {
-  height: 8vh;
-  width: 100vw;
-  top: 0;
+    height: 8vh;
+    width: 100vw;
+    top: 0;
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #252525;
-  text-align: center;
-  float: right;
-  margin: 1rem;
-  font-size: 1.2rem;
-  font-weight: 800;
+    text-decoration: none;
+    color: #252525;
+    text-align: center;
+    float: right;
+    margin: 1rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
 
 .navbar a:hover {
-  color: #525252;
+    color: #525252;
 }
 
 .navbar a.active {
-  color: #adadad;
+    color: #adadad;
 
 }
 
 .navbar h2 {
-  text-decoration: none;
-  color: #252525;
-  text-align: center;
-  float: left;
-  margin: 1rem;
-  margin-left: 2rem;
-  font-size: 1.3rem;
-  font-weight: 900;
+    text-decoration: none;
+    color: #252525;
+    text-align: center;
+    float: left;
+    margin: 1rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .linea-div {
-  background-color: #adadad;
-  width: 100vw;
-  height: 0.1rem;
+    background-color: #adadad;
+    width: 100vw;
+    height: 0.1rem;
 }
 
 * img {
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 1200px) {
-  .principalWrapper {
-  width: 1200px; } 
+    width: 100%;
+    height: auto;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.principalWrapper, .listProducts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+li {
+    list-style: none;
 }
 
-.filterContainer {
-  margin-top: 5rem;
-}
-
-.filterContainer button {
-  background: #252525;
-  color: #adadad;
-  text-transform: uppercase;
-  padding: 0.8rem 4rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  font-family: 'Cutive Mono', monospace;
-  border: none;
-  border-radius: 1.2rem;
-  cursor: pointer; 
-} 
-
-.filterContainer button:hover {
-  background-color: #adadad;
-  color: #252525;
-  font-weight: 600;
+a {
+    text-decoration: none;
 }
 
 .listProducts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8rem 0;
-  text-align: center;
-  margin-top: 7rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  flex: 0 0 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #f5f5f5;
-  border-radius: 3rem;
-  padding: 2.5rem;
-  margin-bottom: 5rem;
-  box-shadow: 2px 0px 17px 2px rgba(26, 26, 26, 0.3);
-  position: relative;
-  width: 19rem;
-  height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.listProducts .principalWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listProducts input {
+    font-size: 1.5rem;
+    font-family: 'Cutive Mono', monospace;
+    height: 2.8rem;
+    width: 30rem;
+    color: #525252;
+    background-color: #f5f5f5;
+    padding: 12px 20px 12px 40px;
+    border: 0.1rem solid #adadad;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.listProducts ul {
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .listProducts ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.listProducts ul li {
+    flex: 0 0 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    margin-bottom: 5rem;
+    box-shadow: 2px 0px 17px 2px rgba(39, 39, 39, 0.2);
+    position: relative;
+}
+
+.listProducts ul li div {
+    width: 14rem;
+    height: auto;
 }
 
 .listProducts span:first-of-type {
-  color: #252525;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-top: 1.9rem;
-}
-
-.listProducts span:last-of-type {
-  color: #252525;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 2rem 0; 
-}
-
-.listProducts button {
-  background: #252525;
-  color: #adadad;
-  text-transform: uppercase;
-  padding: 0.8rem 4rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-family: 'Cutive Mono', monospace;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer; 
-}
-
-.listProducts button:hover {
-  background-color: #adadad;
-  color: #252525;
-  font-weight: 600;
-}
-
-.column {
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.9rem;
+  }
   
-  display: none;
-}
-
-.show {
-  display: block;
-}
+  .listProducts span:last-of-type {
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 2rem 0; 
+  }
+  
+  .listProducts button {
+    background: #252525;
+    color: #adadad;
+    text-transform: uppercase;
+    padding: 0.8rem 4rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Cutive Mono', monospace;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer; 
+  }
+  
+  .listProducts button:hover {
+    background-color: #adadad;
+    color: #252525;
+    font-weight: 600;
+  }
