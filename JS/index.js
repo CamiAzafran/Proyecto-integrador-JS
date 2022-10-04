@@ -1,4 +1,4 @@
-function saveData() { 
+const saveData = () => { 
    const  user = document.getElementById('usuario').value;
    const password = document.getElementById('password').value;
 

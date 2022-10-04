@@ -1,4 +1,5 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,82 @@
     <link rel="stylesheet" href="/CSS/productos.css">
     <title>Malvina</title>
 </head>
+
 <body>
-  <header>
-      <nav>
-          <div class="navbar">
-              <a href="login.html">Login</a>
-              <a class="active" href="productos.html">productos</a>
-              <a href="index.html">Home</a>
-              <div>
-                  <h2>Malvina</h2>
-              </div>
-          </div>
-      </nav>
-      <div class="linea-div"></div>
-  </header>
-  <main class="listProducts" id="listProducts">
-    <div class="principalWrapper">
-        <input type="text" id="myInput" onkeyup="filtroInput()" placeholder="Busca tu remera">
-        <ul id="list-products">
-            <li>
-                <div>
-                    <img src="/IMG/IMG-1.jpeg" alt="Remera YSY negra">
+    <header>
+        <nav>
+            <div class="navbar">
+                <div id="cart">
+                    <span id="totalItems"></span>
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
                 </div>
-                <span>Remera YSY negra</span>
-                <span>$1500</span>
-                <button onclick={addProduct('ysyNegra',1500,1)}>Comprar</button>
-            </li>
-            <li>
+                <a href="login.html">Login</a>
+                <a class="active" href="productos.html">productos</a>
+                <a href="index.html">Home</a>
                 <div>
-                    <img src="/IMG/IMG-2.jpeg" alt="Remera YSY Blanca">
+                    <h2>Malvina</h2>
                 </div>
-                <span>Remera YSY Blanca</span>
-                <span>$1200</span>
-                <button onclick={addProduct("ysyBlanca",1200,1)}>Comprar</button>
-            </li>
-            <li>
-                <div>
-                    <img src="/IMG/IMG-3.jpeg" alt="Remera hilo rojo">
+            </div>
+        </nav>
+        <div class="linea-div"></div>
+    </header>
+    <main class="listProducts" id="listProducts">
+        <div class="principalWrapper">
+            <input type="text" id="myInput" onkeyup="filtroInput()" placeholder="Busca tu remera">
+            <ul id="list-products">
+                <li>
+                    <div>
+                        <img src="/IMG/IMG-1.jpeg" alt="Remera YSY negra">
+                    </div>
+                    <span>Remera YSY negra</span>
+                    <span>$1500</span>
+                    <button onclick={addProduct('Remera-Negra',1500,1)}>Comprar</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="/IMG/IMG-2.jpeg" alt="Remera YSY Blanca">
+                    </div>
+                    <span>Remera YSY Blanca</span>
+                    <span>$1200</span>
+                    <button onclick={addProduct("Remera-Blanca",1200,1)}>Comprar</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="/IMG/IMG-3.jpeg" alt="Remera hilo rojo">
+                    </div>
+                    <span>Remera hilo rojo</span>
+                    <span>$1200</span>
+                    <button onclick={addProduct("Remera-hilo",1200,1)}>Comprar</button>
+                </li>
+                <li>
+                    <div>
+                        <img src="/IMG/IMG-4.jpeg" alt="Remera araña rosa">
+                    </div>
+                    <span>Remera araña rosa</span>
+                    <span>$1200</span>
+                    <button onclick={addProduct("Remera-rosa",1200,1)}>Comprar</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <section class="cartList" id="cartList">
+        <div class="principalWrapper">
+            <h4>Carrito</h4>
+
+            <div class="cart-wrapper" id="cartWrapper">
+                <div class="emptyProductsMessage">
+                    No hay productos seleccionados
                 </div>
-                <span>Remera hilo rojo</span>
-                <span>$1200</span>
-                <button onclick={addProduct("hiloRojo",1200,1)}>Comprar</button>
-            </li>  
-            <li>
-                <div>
-                    <img src="/IMG/IMG-4.jpeg" alt="Remera araña rosa">
-                </div>
-                <span>Remera araña rosa</span>
-                <span>$1200</span>
-                <button onclick={addProduct("arañaRosa",1200,1)}>Comprar</button>
-            </li>               
-        </ul>
-    </div>
-</main>
-  <script src="/JS/productos.js"></script>
-  </body>
+            </div>
+            <div class="total-items">
+                <span class="total-price">
+                    <strong>Total:</strong>
+                    <span id="totalProducts"></span>$
+                </span>
+            </div>
+            <button class="btn-cart">finalizar compra</button>
+        </div>
+    </section>
+    <script src="/JS/productos.js"></script>
+    <script src="https://kit.fontawesome.com/9c88ae9657.js" crossorigin="anonymous"></script>
+</body>
